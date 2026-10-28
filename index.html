@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cristiano Roger Machado - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Cristiano Roger Machado
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" onerror="this.src='https://img.icons8.com/ios-filled/50/ffffff/new-post.png'"/>
+            cristiano.machado@email.com
+          </div>
+          <div style="clear:both;"></div>
+          <div class="contact_info">
+            <img src="html_finalprojimages/phone.png" onerror="this.src='https://img.icons8.com/ios-filled/50/ffffff/phone.png'"/>
+            +55 41 99999-0000
+          </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Project Details</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="profile_image"/>
+      </div>
+
+      <div>
+        <h1>
+          Hi, I'm Cristiano Roger Machado! <img src="html_finalprojimages/waving-hand.png" onerror="this.src='https://img.icons8.com/emoji/48/waving-hand-emoji.png'" width="50px"/>
+        </h1>
+        <p>
+          I am a Systems Analyst and Full Stack Developer experienced in building web applications, operational dashboards, and automation systems using Python, Flask, React, JavaScript, and SQL databases. I focus on creating efficient solutions for process optimization and scalable web architectures.
+        </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png" onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'"/>
+          <h6>HTML5</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg" onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/react.png" onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'"/>
+          <h6>React</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/node.png" onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg'"/>
+          <h6>Python</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/CSS3.png" onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'"/>
+          <h6>CSS3</h6>
+          <p>3 years experience</p>
+        </div>  
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div style="clear:both;"></div>
+
+      <div id="projects-container" class="projects-container">
+        <div class="project-card">
+          <h3>Smart Dock & Yard Management System</h3>
+          <ul>
+            <li>Developed a full-stack web application using Python, Flask, React, and SQLite to automate dock scheduling, vehicle entry tracking, and real-time yard operations.</li>
+          </ul>
+        </div>
+        <hr>
+        <div class="project-card">
+          <h3>IoT Warehouse Sensor Monitor</h3>
+          <ul>
+            <li>Built an integrated monitoring dashboard connecting ultrasonic hardware sensors via serial communication to a Python backend and a responsive React interface.</li>
+          </ul>
+        </div>
+        <hr>
+        <div class="project-card">
+          <h3>Supply & Returns Management Portal</h3>
+          <ul>
+            <li>Created an operational web portal with HTML5, Tailwind CSS, JavaScript, and PostgreSQL to streamline supply scheduling and automated returns tracking.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Cristiano is an outstanding Systems Analyst who transforms complex operational challenges into clean, intuitive web applications. His work on our automation systems delivered immediate results.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Cristiano on full-stack development projects is always productive. He has deep knowledge of Python, React, and SQL, and consistently writes reliable, maintainable code.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Cristiano combines strong technical skills in software engineering with a proactive mindset for continuous improvement. He is a dedicated professional and a great team collaborator.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg" onerror="this.src='https://img.icons8.com/fluency/48/checked.png'"/>
+      <h3>Thanks for leaving a recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
